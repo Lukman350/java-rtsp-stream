@@ -9,10 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 class RtspStream extends Thread {
-    private Socket clientSocket;
+    private final Socket clientSocket;
     private FrameGrabber frameGrabber;
     private FrameRecorder frameRecorder;
-    private List<Camera> cameras = new ArrayList<>();
+    private final List<Camera> cameras = new ArrayList<>();
 
     public RtspStream(Socket clientSocket) {
         this.clientSocket = clientSocket;

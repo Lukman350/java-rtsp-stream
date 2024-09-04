@@ -9,7 +9,7 @@ import java.util.List;
 public class RtspServer {
     private static final int FPS = 30;
     private static final int PORT = 554;
-    private List<RtspStream> streams;
+    private final List<RtspStream> streams;
     private ServerSocket serverSocket;
 
     public RtspServer() {
